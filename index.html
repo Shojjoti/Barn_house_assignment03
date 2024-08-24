@@ -53,10 +53,10 @@
                     </ul>
                   </div>
                   <!-- right side -->
-                  <div>
-                    <a class="btn btn-ghost text-3xl font-extrabold flex items-center">
+                  <div class="flex">
+                    <a class="btn btn-ghost text-3xl font-extrabold flex items-center ">
                       <!-- Circle Background for Up-Right Arrow Icon -->
-                      <span class="bg-[#ABEF5F] rounded-full p-2">
+                      <span class="bg-[#ABEF5F] rounded-full p-2 md:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 0 0 7m0 -7l-7 7"></path>
                         </svg>
@@ -95,16 +95,18 @@
                           </span>
                       </button>  
                     <!-- shop cart button -->
-                    <button class="btn btn-ghost btn-circle">
-                        <!-- Cart Icon -->
-                        <span class="bg-[#f4f0f0f4] rounded-full p-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m-2.4 8h16m-4 0a1 1 0 110 2 1 1 0 010-2zm-10 0a1 1 0 110 2 1 1 0 010-2z"></path>
-                              </svg>
-                          </span>
-                    </button>
+                    <div class="sm:hidden md:hidden">
+                        <button class="btn btn-ghost btn-circle ">
+                            <!-- Cart Icon -->
+                            <span class="bg-[#f4f0f0f4] rounded-full p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m-2.4 8h16m-4 0a1 1 0 110 2 1 1 0 010-2zm-10 0a1 1 0 110 2 1 1 0 010-2z"></path>
+                                  </svg>
+                              </span>
+                        </button>
+                    </div>
                     <!-- book consult part -->
-                    <button>
+                    <button class="flex">
                         <a class="btn bg-[#ABEF5F] font-bold"> Book Consult  <span class="bg-black rounded-full p-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 0 0 7m0 -7l-7 7"></path>
@@ -146,7 +148,6 @@
                 
     </header>
     <!-- main part -->
-
      <main>
 
         <div class="hero bg-base-200 min-h-screen m-auto">
@@ -158,7 +159,7 @@
                 <img src="assets/Vector.png" class="sm:hidden" alt="">
                 <!-- About US button  -->
                 <button class="btn bg-white text-xs sm:items-center">
-                    <span>View Details</span>
+                    <span>About US</span>
                     <span class="ml-2 bg-none rounded-full p-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6" />
@@ -289,9 +290,114 @@
             </div>
            
         </div>
+        
 
         <!-- our work prosses -->
+         <div class=" bg-base-200 space-y-5" >
+            
+            <div class="hero space-y-4">
+                <button class="btn bg-white text-xs items-center flex">
+                    <span>How we works</span>
+                    <span class="ml-2 bg-none rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-5 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6" />
+                        </svg>
+                        
+                    </span>
+                </button>
+            </div>
          
+            <div class="text-center ">
+                <h1 class="font-bold text-4xl">Our Works Process</h1>
+                <br>
+                <p class="font-normal text-xs">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.  
+                </p>
+            </div>
+            <div class="lg:flex lg:justify-center m-auto lg:space-x-3 space-y-3 lg:max-w-[1240px]">
+                <!-- C1 -->
+                <div>
+                    <div class="card bg-[#E7C1D3] text-primary-content ">
+                        <div class=" mx-6 my-4 avater">
+                            <svg class="w-[32px] h-[32px] text-black dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 9a3 3 0 0 1 3-3m-2 15h4m0-3c0-4.1 4-4.9 4-9A6 6 0 1 0 6 9c0 4 4 5 4 9h4Z"/>
+                              </svg>
+                                                            
+                                                                                                         
+                        </div>
+                        
+                        <div class="card-body">
+                          <h2 class="card-title text-black">Concept</h2>
+                          <p class="text-xs text-black">The barn house captivates with its blend of rustic charm and modern.</p>
+                          
+                        </div>
+                      </div>
+
+                </div>
+                <!-- c2 -->
+                <div>
+                    <div class="card bg-[#EFDA6E] text-primary-content ">
+                        <div class=" mx-6 my-4 avater">
+                            <svg class="w-[32px] h-[32px] text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 12c.263 0 .524-.06.767-.175a2 2 0 0 0 .65-.491c.186-.21.333-.46.433-.734.1-.274.15-.568.15-.864a2.4 2.4 0 0 0 .586 1.591c.375.422.884.659 1.414.659.53 0 1.04-.237 1.414-.659A2.4 2.4 0 0 0 12 9.736a2.4 2.4 0 0 0 .586 1.591c.375.422.884.659 1.414.659.53 0 1.04-.237 1.414-.659A2.4 2.4 0 0 0 16 9.736c0 .295.052.588.152.861s.248.521.434.73a2 2 0 0 0 .649.488 1.809 1.809 0 0 0 1.53 0 2.03 2.03 0 0 0 .65-.488c.185-.209.332-.457.433-.73.1-.273.152-.566.152-.861 0-.974-1.108-3.85-1.618-5.121A.983.983 0 0 0 17.466 4H6.456a.986.986 0 0 0-.93.645C5.045 5.962 4 8.905 4 9.736c.023.59.241 1.148.611 1.567.37.418.865.667 1.389.697Zm0 0c.328 0 .651-.091.94-.266A2.1 2.1 0 0 0 7.66 11h.681a2.1 2.1 0 0 0 .718.734c.29.175.613.266.942.266.328 0 .651-.091.94-.266.29-.174.537-.427.719-.734h.681a2.1 2.1 0 0 0 .719.734c.289.175.612.266.94.266.329 0 .652-.091.942-.266.29-.174.536-.427.718-.734h.681c.183.307.43.56.719.734.29.174.613.266.941.266a1.819 1.819 0 0 0 1.06-.351M6 12a1.766 1.766 0 0 1-1.163-.476M5 12v7a1 1 0 0 0 1 1h2v-5h3v5h7a1 1 0 0 0 1-1v-7m-5 3v2h2v-2h-2Z"/>
+                              </svg>                 
+                                                                                                         
+                        </div>
+                        
+                        <div class="card-body">
+                          <h2 class="card-title text-black">Design Process</h2>
+                          <p class="text-xs text-black">The barn house captivates with its blend of rustic charm and modern.</p>
+                          
+                        </div>
+                      </div>
+
+                </div>
+                <!-- c3 -->
+                <div>
+                    <div class="card bg-[#A4DAC3] text-primary-content ">
+                        <div class=" mx-6 my-4 avater">
+                            <svg class="w-[34px] h-[34px] text-gray-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
+                                <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                              </svg>
+                              
+                                              
+                                                                                                         
+                        </div>
+                        
+                        <div class="card-body">
+                          <h2 class="card-title text-black">Supervision</h2>
+                          <p class="text-xs text-black">The barn house captivates with its blend of rustic charm and modern.</p>
+                          
+                        </div>
+                      </div>
+
+                </div>
+                <!-- 04 -->
+                <div>
+                    <div class="card bg-[#77AAEA] text-primary-content ">
+                        <div class=" mx-6 my-4 avater">
+                            <svg class="w-[32px] h-[32px] text-black dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M4 4c0-.975.718-2 1.875-2h12.25C19.282 2 20 3.025 20 4v16c0 .975-.718 2-1.875 2H5.875C4.718 22 4 20.975 4 20V4Zm7 13a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2h-2Z" clip-rule="evenodd"/>
+                              </svg>
+                                
+                              
+                                              
+                                                                                                         
+                        </div>
+                        
+                        <div class="card-body">
+                          <h2 class="card-title text-black">Budget Planning</h2>
+                          <p class="text-xs text-black">The barn house captivates with its blend of rustic charm and modern.</p>
+                          
+                        </div>
+                      </div>
+
+                </div>
+
+            </div>
+         </div>
+
 
 
 
@@ -299,6 +405,42 @@
     
     <!-- footer part -->
     <footer>
+
+        <footer class="footer footer-center bg-black text-base-content rounded p-10">
+            <div class="flex">
+                <a class="btn btn-ghost text-3xl font-extrabold flex items-center ">
+                  <!-- Circle Background for Up-Right Arrow Icon -->
+                  <span class="bg-[#ABEF5F] rounded-full p-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 0 0 7m0 -7l-7 7"></path>
+                    </svg>
+                  </span>
+                  <span class="ml-2n text-white">Rinterio</span>
+                </a>
+                
+              </div>
+            <div>
+                <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <nav class="lg:grid lg:grid-flow-col gap-4 text-white">
+              <a class="link link-hover">Home</a>
+              <a class="link link-hover">Services</a>
+              <a class="link link-hover">Services</a>
+              <a class="link link-hover">Blogs</a>
+              <a class="link link-hover">Contact Us</a>
+            </nav>
+
+            <!-- book consult button -->
+            <button class="flex">
+                <a class="btn bg-[#ABEF5F] font-bold"> Book Consult  <span class="bg-black rounded-full p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 0 0 7m0 -7l-7 7"></path>
+                    </svg>
+                  </span></a>
+            </button>
+            
+            
+          </footer>
 
     </footer>
 </body>
