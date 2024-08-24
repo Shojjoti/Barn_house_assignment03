@@ -19,7 +19,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="manrope-regular">
+<body class="manrope-regular space-y-6 m-3">
     <header>
         <!-- navbar -->
          <nav>
@@ -114,8 +114,36 @@
                 </div>
               </div>
          </nav>
-
-         
+        <!-- banner body  -->
+        <div class="flex flex-col items-center justify-center min-h-screen space-y-4 md:my-20">
+            <!-- Centering the Image -->
+            <img src="assets/banner.png" class="rounded-lg" />
+        
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="hero-content text-center">
+                    <!-- Centering all content within this div -->
+                    <div class="flex flex-col items-center justify-center space-y-4">
+                        <h1 class="text-5xl font-bold">
+                            A barn house of this design has a <br> striking appearance
+                        </h1>
+                        <p class="py-3">
+                            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                        </p>
+                        <!-- Button centered within flex container -->
+                        <button class="btn bg-[#ABEF5F] font-bold flex items-center justify-center">
+                            <span>View Details</span>
+                            <span class="ml-2 bg-none rounded-full p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 0 0 7m0 -7l-7 7"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+                
     </header>
     <!-- main part -->
 
