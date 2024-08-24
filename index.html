@@ -1,11 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barn House</title>
+    <!-- font cnd -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .manrope-regular {
+          font-family: "Manrope", sans-serif;          
+          font-style: normal;
+        }
+    </style>
+    <!-- TailWind + DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
+<body class="manrope-regular">
+    <header>
+        <!-- navbar -->
+         <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                      
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a class="font-bold">Home</a></li>
+                      <li><a class="">Services</a></li>
+                      <li><a class="">Portfolio</a></li>
+                      <li><a class="">Blogs</a></li>
+                      <li><a class="">Contact Us</a></li>
+                      
+                    </ul>
+                  </div>
+                  <!-- right side -->
+                  <div>
+                    <a class="btn btn-ghost text-3xl font-extrabold flex items-center">
+                      <!-- Circle Background for Up-Right Arrow Icon -->
+                      <span class="bg-[#ABEF5F] rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 0 0 7m0 -7l-7 7"></path>
+                        </svg>
+                      </span>
+                      <span class="ml-2">Rinterio</span>
+                    </a>
+                  </div>
+                  
+                </div>
+
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-bold">Home</a></li>
+                      <li><a class="">Services</a></li>
+                      <li><a class="">Portfolio</a></li>
+                      <li><a class="">Blogs</a></li>
+                      <li><a class="">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <!-- search button -->
+                    <button class="btn btn-ghost btn-circle">
+                        <span class="bg-[#f4f0f0f4] rounded-full p-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-5 w-5"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                          </span>
+                      </button>  
+                    <!-- shop cart button -->
+                    <button class="btn btn-ghost btn-circle">
+                        <!-- Cart Icon -->
+                        <span class="bg-[#f4f0f0f4] rounded-full p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m-2.4 8h16m-4 0a1 1 0 110 2 1 1 0 010-2zm-10 0a1 1 0 110 2 1 1 0 010-2z"></path>
+                              </svg>
+                          </span>
+                    </button>
+                    <!-- book consult part -->
+                    <button>
+                        <a class="btn bg-[#ABEF5F] font-bold"> Book Consult  <span class="bg-black rounded-full p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 0 0 7m0 -7l-7 7"></path>
+                            </svg>
+                          </span></a>
+                    </button>
+                </div>
+              </div>
+         </nav>
+
+         
+    </header>
+    <!-- main part -->
+
+     <main>
+
+     </main>
     
+    <!-- footer part -->
+    <footer>
+
+    </footer>
 </body>
 </html>
